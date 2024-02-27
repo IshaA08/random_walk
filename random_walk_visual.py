@@ -5,7 +5,7 @@ from random_walk import RandomWalk
 # Keep making walks as long as the program is active
 while True:
     # Generate a random walk
-    rw = RandomWalk()
+    rw = RandomWalk(50_000)
     rw.fill_walk()
 
     # Plot the points in the walk
@@ -20,15 +20,15 @@ while True:
         c=point_numbers,
         cmap=plt.cm.Reds,
         edgecolors='none', 
-        s=15
+        s=1
         )
     
     # Emphasize the start and end points
-    ax.scatter(0, 0, c='green', edgecolors='none', s=150)
+    ax.scatter(0, 0, c='purple', edgecolors='none', s=150)
     ax.scatter(
         rw.x_values[-1],
         rw.y_values[-1],
-        c='orange',
+        c='pink',
         edgecolors='none',
         s=150
     )
