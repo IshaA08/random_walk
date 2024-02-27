@@ -5,7 +5,7 @@ class RandomWalk:
     A class that generates random walks, which is
     a simplified model of physical Brownian motion
     that models things like a pollen grain moving across
-    water or the molecular motion in a water drop
+    water or the molecular motion within a water drop
     """
 
     def __init__(self, num_points=5000):
