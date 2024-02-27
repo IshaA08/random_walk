@@ -32,6 +32,12 @@ while True:
         edgecolors='none',
         s=150
     )
+
+    # Remove the axes to reduce distractions from the walk
+    ax.get_xaxis().set_visible(False)
+    ax.get_yaxis().set_visible(False)
+
+    # Show the plot
     plt.show()
 
     keep_running = input("Do you want to make another walk> (y/n)")
